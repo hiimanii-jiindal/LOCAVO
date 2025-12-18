@@ -5,3 +5,4 @@ Future changes:
 //Location
 //spring offer -> home page
 //responsive throughout devices
+//best seller's collection - add to cart/ wishlist option
