@@ -1,0 +1,7 @@
+//Icons
+
+Future changes:
+//Instagram, twitter, facebook photo in footer of home page
+//Location
+//spring offer -> home page
+//responsive throughout devices
