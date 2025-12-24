@@ -1,21 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Frontend Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOCAVO</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Frontend Page</h1>
-    </header>
-    <main>
-        <p>This is a sample frontend page.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Frontend Page</p>
-    </footer>
+
+<header class="navbar">
+  <div class="nav-left">
+    <!--<span class="logo"></span>-->
+    <span class="brand">LOCAVO</span>
+  </div>
+  <nav class="nav-center">
+    <a class="active" href="">Home</a>
+    <a href="">Categories</a>
+    <a href="">Marketplace</a>
+    <a href="">About Us</a>
+    <a href="">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <!-- <a class="icon" href="#">🔍</a> -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.3-4.3" />
+    </svg>
+    <!-- <a class="icon" href="#">🛒</a> -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="21" r="1" />
+      <circle cx="19" cy="21" r="1" />
+      <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+    </svg>
+    <!-- <a class="icon" href="#">♡</a> -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+    </svg>
+    <div class="nav-auth">
+      <a class="login" href="#auth-section">Login</a>
+      <a class="register" href="#auth-section">Register</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      <span class="primary">Digital Doors for</span><br>
+      <span class="secondary">Every Store</span>
+    </h1>
+    <p>Empowering local, small and home-based businesses to reach a wider audience with zero registration fees.</p>
+    <div class="hero-buttons">
+      <a href="#best-sellers" class="primary-btn">Start Shopping</a>
+      <a href="#auth-section" class="outline-btn">Sell on LOCAVO</a>
+    </div>
+  </div>
+  <div class="hero-image">
+  <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1200&q=80" alt="Local seller using POS system">
+  <div class="seller-badge">
+    <span class="dot"></span>
+    <div>
+      <small>Active Sellers</small>
+      <strong>450+ Verified</strong>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="stats">
+  <div class="stat-card"><h2>5,000+</h2><p>Happy Customers</p></div>
+  <div class="stat-card"><h2>450+</h2><p>Verified Sellers</p></div>
+  <div class="stat-card"><h2>2.5k+</h2><p>Unique Products</p></div>
+  <div class="stat-card"><h2>4.8/5</h2><p>User Rating</p></div>
+</section>
+
+<section class="collections">
+  <div class="collections-head">
+  <h2>Curated Collections</h2>
+  <p>Discover hand-crafted products from verified local sellers.</p>
+
+  <div class="collection-grid">
+
+    <a href="#" class="collection-card">
+      <img src="https://i.pinimg.com/736x/ac/56/7d/ac567d5da8040572cf773ab16017eeee.jpg" alt="Candles">
+      <h3>Candles</h3>
+      <p>Artisan Soy & Beeswax</p>
+    </a>
+
+    <a href="#" class="collection-card">
+      <img src="https://images.unsplash.com/photo-1731406322264-dac59f83828b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jewelry">
+      <h3>Jewellery</h3>
+      <p>Handmade Rings & Necklaces</p>
+    </a>
+
+    <a href="#" class="collection-card">
+      <img src="https://i.pinimg.com/736x/d4/e7/b1/d4e7b1b11aed9e6f7e94a202101291f8.jpg" alt="Resin Art">
+      <h3>Resin Art</h3>
+      <p>Floral Coasters & Decor</p>
+    </a>
+
+  </div>
+</section>
+
+<section class="best-sellers">
+  <div class="section-head">
+    <h2>Best Sellers</h2>
+    <p>Most loved products from verified local sellers</p>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1659440508882-9202c080e573?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h4>Luxury Glass Jar Candles</h4>
+      <span class="price">₹1,200</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1621554012188-c3f2280703c3?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h4>Aromatheraphy Scented Candle</h4>
+      <span class="price">₹450</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://plus.unsplash.com/premium_photo-1674255466849-b23fc5f5d3eb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h4>Pearl Necklace</h4>
+      <span class="price">₹850</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1709433157352-d43961608339?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h4>Resin Wall Clock (Marble Finish)</h4>
+      <span class="price">₹1,600</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81ungmHpjyL._AC_UF894,1000_QL80_.jpg">
+      <h4>Resin Coasters</h4>
+      <span class="price">₹999</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://www.teaandcrafting.co.uk/cdn/shop/files/4LearnhowtoMakeCandles-UniqueGiftIdeasforChristmas-ChristmasScentedCandleMakingWorkshopinCentralLondon_740xcopy.jpg?v=1697801283">
+      <h4>Soy wax scented candle (Hand Poured)</h4>
+      <span class="price">₹399</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1649701954681-677a067a472b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h4>Evi-eye Charm Bracelet</h4>
+      <span class="price">₹650</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1621264398012-93f8fe0b15e7?q=80&w=1026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      <h4>Resin Photoframe with Dried Flowers</h4>
+      <span class="price">₹1,450</span>
+    </div>
+  </div>
+</section>
+
+<section class="announcement-section">
+  <h2 class="announcement-title">Announcements</h2>
+  <div class="announcement">
+
+    <div class="announcement-content">
+      <span class="badge">UPCOMING WORKSHOP</span>
+
+      <h3>Artisan Resin Masterclass</h3>
+
+      <p>
+        Join us this weekend for an immersive workshop on creating your own
+        resin art coasters. Materials provided!
+      </p>
+
+      <div class="meta">
+        <span>31st December, 2025</span>
+        <span>2:00 PM Onwards</span>
+        <span>Navrangpura</span>
+      </div>
+
+      <button class="announcement-btn">Register Now</button>
+    </div>
+
+    <img
+      src="https://plus.unsplash.com/premium_photo-1702598266306-0af54bbc1be8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Resin Art Workshop"
+    >
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <span class="logo-icon">🏠</span>
+        <span class="logo-text">LOCAVO</span>
+      </div>
+      <p>
+        Empowering local artisans and small business owners with digital storefronts.
+      </p>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">I</a>
+        <a href="#" aria-label="Facebook">F</a>
+        <a href="#" aria-label="Twitter">T</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <a href="#">Browse Categories</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Become a Seller</a>
+      <a href="#">Our Story</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Support</h4>
+      <a href="#">Submit Suggestion</a>
+      <a href="#">Help Center</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Newsletter</h4>
+      <div class="newsletter-box">
+        <input type="email" placeholder="Email address">
+        <button>Join</button>
+      </div>
+      <small>Subscribe to get updates on new local stores.</small>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 LOCAVO. Group No. 36 – Final Year Project.
+  </div>
+</footer>
+
 </body>
 </html>
